@@ -47,8 +47,8 @@ void moveGantry(float x, float y, float z) {
   // Run X motors until they reach their targets or the limit switch is triggered
   while ((motorX1.distanceToGo() != 0 || motorX2.distanceToGo() != 0)) {
     // Check for limit switch
-    if (digitalRead(limitSwitchX1) == LOW) motorX1.setCurrentPosition(motorX1.currentPosition());
-    if (digitalRead(limitSwitchX1) == LOW) motorX2.setCurrentPosition(motorX2.currentPosition());
+    if (digitalRead(limitSwitchX1) == HIGH) motorX1.setCurrentPosition(motorX1.currentPosition());
+    if (digitalRead(limitSwitchX1) == HIGH) motorX2.setCurrentPosition(motorX2.currentPosition());
 
     // Run motors
     motorX1.run();
