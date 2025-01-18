@@ -1,3 +1,9 @@
+//initial commit ---Krishnapriya R 
+//TEST DONE 
+//THE LIMIT SWITCH ONLY ACTIVATES THE SINGLE TIME HITTING THE ORIGIN AND CALIBIRATING ITSELF TO THE ORIGIN 0,0,0
+
+
+
 #include <AccelStepper.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
